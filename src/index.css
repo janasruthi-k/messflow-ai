@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}
+
+.transition-smooth {
+  @apply transition-all duration-300 ease-out;
+}
+
+.hover-lift {
+  @apply hover:shadow-lg hover:-translate-y-1 transition-smooth;
+}
+
+.gradient-blue-teal {
+  @apply bg-gradient-to-br from-blue-500 to-teal-600;
+}
+
+.gradient-orange-red {
+  @apply bg-gradient-to-br from-orange-500 to-red-600;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400;
+}
